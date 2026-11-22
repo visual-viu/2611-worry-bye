@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.tsbuildinfo
+tests/.app-test.mjs
+tests/.audio-*.mjs
+tests/.card-*.mjs
