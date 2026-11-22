@@ -94,3 +94,42 @@
   .eyebrow, .duration, footer, .steps b, .paper-bottom, .privacy, .card-dialog > p { font-size: 13px; }
   .sound, .welcome-decoration span, .steps > span, .choice p, .text-button, .copy-status, .cookie-hint, .audio-status { font-size: 14px; }
 }
+
+.brand {
+  gap: 9px;
+  padding: 4px 6px 4px 0;
+  text-align: left;
+  letter-spacing: 0;
+}
+.brand-emblem {
+  width: 39px;
+  height: 39px;
+  flex: none;
+  filter: drop-shadow(0 0 9px #f5c98470);
+  transition: transform .25s ease;
+}
+.brand:hover .brand-emblem { transform: scale(1.07); }
+.brand-wordmark { display: flex; flex-direction: column; gap: 2px; line-height: 1; }
+.brand-overline {
+  color: #e3c9dd;
+  font-family: 'Heejoy', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .08em;
+}
+.brand-name {
+  color: #ffe6bd;
+  font-family: 'GyunMyeongjo', serif;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-shadow: 0 0 10px #f5be7c85;
+}
+.brand-name span { color: #ffd18c; font-size: 10px; vertical-align: 3px; }
+@media (max-width: 600px) {
+  .brand { gap: 7px; }
+  .brand-emblem { width: 32px; height: 32px; }
+  .brand-overline { font-size: 8px; }
+  .brand-name { font-size: 16px; }
+  .brand-name span { font-size: 8px; vertical-align: 2px; }
+}
